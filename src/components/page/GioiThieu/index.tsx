@@ -1,14 +1,15 @@
 import React from "react";
+import Container from "../../Atoms/Container";
 import DefaultButton from "../../Atoms/DefaultButton";
 
 import styles from "./styles.module.scss";
 
 const GioiThieu = () => {
   return (
-    <div className={styles.container}>
+    <Container>
       <p>GioiThieu</p>
       <DefaultButton>hello</DefaultButton>
-    </div>
+    </Container>
   );
 };
 export default GioiThieu;
