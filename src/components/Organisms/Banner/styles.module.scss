@@ -2,7 +2,10 @@
 
 .banner {
   .card {
+    @include boxShadow();
+    padding: 60px 15px;
     margin: 40px 60px;
+
     .cardBody {
       text-align: center;
       .btn {
