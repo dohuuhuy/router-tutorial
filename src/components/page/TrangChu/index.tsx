@@ -1,13 +1,17 @@
 import React from "react";
+import Button from "../../Atoms/Button";
 import Container from "../../Atoms/Container";
-import DefaultButton from "../../Atoms/DefaultButton";
+import Banner from "../../Organisms/Banner";
 
 const TrangChu = () => {
   return (
-    <Container>
-      <p>TrangChu</p>
-      <DefaultButton>helo</DefaultButton>
-    </Container>
+    <>
+      <Banner />
+      <Container>
+        <p>TrangChu</p>
+        <Button>helo</Button>
+      </Container>
+    </>
   );
 };
 export default TrangChu;

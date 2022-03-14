@@ -1,0 +1,14 @@
+@import "/public/assets/scss/mixin";
+
+.button {
+  @include button();
+  .item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    .icon {
+      margin: 0 5px;
+    }
+  }
+}

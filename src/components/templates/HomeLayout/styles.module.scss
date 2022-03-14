@@ -44,19 +44,7 @@
     }
     .AuthAccount {
       .btn {
-        @include boxShadow();
-        background-color: whitesmoke;
-        padding: 5px 15px;
-        border-radius: 3px;
-        margin: 5px;
-        border: 0;
-        transition: transform 0.1s, filter 0.1s;
-        &:hover {
-          filter: brightness(90%);
-        }
-        &:active {
-          transform: scale(0.97);
-        }
+        @include button();
       }
     }
   }

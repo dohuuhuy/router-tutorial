@@ -2,3 +2,19 @@
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
+
+@mixin button() {
+  @include boxShadow();
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  margin: 5px;
+  border: 0;
+  transition: transform 0.1s, filter 0.1s;
+  &:hover {
+    filter: brightness(90%);
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}

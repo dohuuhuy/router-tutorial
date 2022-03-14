@@ -4,7 +4,7 @@ import Container from "../../Atoms/Container";
 const LienHe = () => {
   return (
     <Container>
-      <p>Hello LienHe</p>
+      <p>Đây là trang liên hệ</p>
     </Container>
   );
 };

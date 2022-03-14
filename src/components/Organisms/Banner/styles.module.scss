@@ -1,0 +1,13 @@
+@import "/public/assets/scss/mixin";
+
+.banner {
+  .card {
+    margin: 40px 60px;
+    .cardBody {
+      text-align: center;
+      .btn {
+        background-color: white;
+      }
+    }
+  }
+}
