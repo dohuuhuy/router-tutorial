@@ -9,6 +9,7 @@ const Banner = () => {
       <div className={styles.card}>
         <div className={styles.cardBody}>
           <h2>Chào mừng </h2>
+          <h3>Thử nghiệm router-dom-v6, typescript, css module</h3>
           <h4>Bạn đến với Non, Bạn đã sẳn sàng trải nghiệm Non chưa?</h4>
 
           <p>

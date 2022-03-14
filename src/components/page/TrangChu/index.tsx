@@ -8,7 +8,7 @@ const TrangChu = () => {
     <>
       <Banner />
       <Container>
-        <p>TrangChu</p>
+        <p>Đây là trang chủ</p>
         <Button>helo</Button>
       </Container>
     </>
