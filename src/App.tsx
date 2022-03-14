@@ -1,16 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Expenses from "./components/page/Expenses";
-import Invoices from "./components/page/Invoices";
-import { Home } from "./components/templates/home";
+import GioiThieu from "./components/page/GioiThieu";
+import LienHe from "./components/page/LienHe";
+import TrangChu from "./components/page/TrangChu";
+import HomeLayout from "./components/templates/HomeLayout";
+import { UrlPage } from "./utils/contants";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="expenses" element={<Expenses />} />
-          <Route path="invoices" element={<Invoices />} />
+        <Route path={UrlPage.Home} element={<HomeLayout />}>
+          <Route index element={<TrangChu />} />
+          <Route path={UrlPage.GioiThieu} element={<GioiThieu />} />
+          <Route path={UrlPage.LienHe} element={<LienHe />} />
         </Route>
       </Routes>
     </div>

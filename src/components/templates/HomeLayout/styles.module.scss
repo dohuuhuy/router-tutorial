@@ -1,0 +1,71 @@
+@import "/public/assets/scss/mixin";
+
+.layout {
+  background-color: #fff;
+  padding: auto;
+  .header {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      .logo {
+        .txtlogo {
+          margin: 0;
+          padding: 5px 15px;
+          @include boxShadow();
+        }
+      }
+      .nav {
+        .menu {
+          list-style: none;
+          display: flex;
+          padding: 0;
+          margin: 0;
+          li {
+            padding: 5px 15px;
+            border-radius: 3px;
+            margin: 5px;
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .AuthAccount {
+      .btn {
+        @include boxShadow();
+        background-color: whitesmoke;
+        padding: 5px 15px;
+        border-radius: 3px;
+        margin: 5px;
+        border: 0;
+        transition: transform 0.1s, filter 0.1s;
+        &:hover {
+          filter: brightness(90%);
+        }
+        &:active {
+          transform: scale(0.97);
+        }
+      }
+    }
+  }
+  .main {
+    min-height: 500px;
+  }
+  .footer {
+    p {
+      text-align: center;
+    }
+  }
+}

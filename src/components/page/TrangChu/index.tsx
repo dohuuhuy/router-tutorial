@@ -1,12 +1,12 @@
 import React from "react";
 import DefaultButton from "../../Atoms/DefaultButton";
 
-const Expenses = () => {
+const TrangChu = () => {
   return (
     <>
-      <p>Expenses</p>
-      <DefaultButton>hello</DefaultButton>
+      <p>TrangChu</p>
+      <DefaultButton>helo</DefaultButton>
     </>
   );
 };
-export default Expenses;
+export default TrangChu;
