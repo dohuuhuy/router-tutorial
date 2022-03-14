@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRegGrinSquintTears, FaRegHandScissors } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import { Link } from "react-router-dom";
@@ -25,7 +24,7 @@ const Header = () => {
                 </li>
               );
             })}
-          </ul>{" "}
+          </ul>
         </nav>
       </div>
 
