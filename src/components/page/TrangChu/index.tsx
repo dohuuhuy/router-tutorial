@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UrlPage } from "../../../utils/contants";
 import Button from "../../Atoms/Button";
 import Container from "../../Atoms/Container";
 import Banner from "../../Organisms/Banner";
+import styles from "./styles.module.scss";
 
 const TrangChu = () => {
   const navigate = useNavigate();
@@ -14,6 +16,20 @@ const TrangChu = () => {
       },
     });
   };
+
+  const [state, setstate] = useState<any>();
+
+  const onChange = (event: any): void => {
+    const { value } = event.target;
+    setstate((v: any) => ({ ...v, selectedItem: value }));
+  };
+
+  const clear = () => {
+    setstate((v: any) => ({ ...v, selectedItem: "" }));
+    // event.target.;
+  };
+
+  console.log("state", state);
   return (
     <>
       <Banner />
@@ -21,27 +37,33 @@ const TrangChu = () => {
         <p>Đây là trang chủ</p>
         <Button onClick={onDirect}>push state</Button>
 
-        <label>Select </label>
-        <input type="text" id="txt_ide" list="ide" placeholder="chọn gì đi" />
-        <datalist id="ide">
-          <option selected value="Brackets" />
-          <option value="Coda" />
-          <option value="Dreamweaver" />
-          <option value="Espresso" />
-          <option value="jEdit" />
-          <option value="Komodo Edit" />
-          <option value="Notepad++" />
-          <option value="Sublime Text 2" />
-          <option value="Taco HTML Edit" />
-          <option value="Textmate" />
-          <option value="Text Pad" />
-          <option value="TextWrangler" />
-          <option value="Visual Studio" />
-          <option value="VIM" />
-          <option value="XCode" />
-        </datalist>
+        <div className={styles.divSelect}>
+          <label>Select </label>
+          <input
+            onChange={onChange}
+            value={state.selectedItem}
+            onClick={clear}
+            onFocus={clear}
+            style={{ width: "300px" }}
+            type="text"
+            list="listDemo"
+            placeholder="chọn gì đi"
+            className={styles.selectSearch}
+          />
+          <datalist id="listDemo">
+            {listDemo.map((v, i) => {
+              return (
+                <option key={i} value={v}>
+                  {v}
+                </option>
+              );
+            })}
+          </datalist>
+        </div>
       </Container>
     </>
   );
 };
 export default TrangChu;
+
+const listDemo = ["ali", "metu", "puri", "onno", "leri", "mena"];
