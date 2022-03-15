@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../../Atoms/Container";
 import styles from "./styles.module.scss";
 import { FaRegGrinTongueSquint } from "react-icons/fa";
