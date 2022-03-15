@@ -1,5 +1,5 @@
 import { find, first } from "lodash";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UrlPage } from "../../../utils/contants";
 import Button from "../../Atoms/Button";
