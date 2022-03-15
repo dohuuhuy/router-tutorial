@@ -2,10 +2,16 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "lib": ["dom", "es2015"],
+    "lib": [
+      "dom",
+      "es2015"
+    ],
     "jsx": "react-jsx",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
-    // "rootDir": ".",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
     "baseUrl": "./src",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -14,21 +20,21 @@
     "sourceMap": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "paths": {
-      "@actionStore": ["src/store/actionStore"],
-      "@interface": ["src/store/interface"],
-      "@containers/*": ["./src/containers/*"],
-      "@config/*": ["./src/config/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@templates/*": ["./src/components/templates/*"],
-      "@components/*": ["./src/components/*"],
-      "@componentStore/*": ["./src/store/componentStore/*"],
-      "@assets/*": ["./src/common/assets/*"],
-      "@public/*": ["./public/*"],
-      "@store/*": ["./src/store/*"]
-    }
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "noEmit": true
   },
-
-  "include": ["./src/**/*", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "./src/**/*",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

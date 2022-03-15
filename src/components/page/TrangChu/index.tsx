@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { find, first } from "lodash";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UrlPage } from "../../../utils/contants";
 import Button from "../../Atoms/Button";
@@ -17,16 +18,20 @@ const TrangChu = () => {
     });
   };
 
-  const [state, setstate] = useState<any>();
+  const [state, setstate] = useState<any>({ selectedItem: first(listDemo) });
 
-  const onChange = (event: any): void => {
+  const onChange = (event: any) => {
+    console.log({ event });
+
     const { value } = event.target;
-    setstate((v: any) => ({ ...v, selectedItem: value }));
+    setstate((v: any) => ({
+      ...v,
+      selectedItem: find(listDemo, { name: value }),
+    }));
   };
 
   const clear = () => {
-    setstate((v: any) => ({ ...v, selectedItem: "" }));
-    // event.target.;
+    setstate((v: any) => ({ ...v, selectedItem: null }));
   };
 
   console.log("state", state);
@@ -38,11 +43,11 @@ const TrangChu = () => {
         <Button onClick={onDirect}>push state</Button>
 
         <div className={styles.divSelect}>
-          <label>Select </label>
+          <label>Select dvd </label>
           <input
+            id="shit"
             onChange={onChange}
-            value={state.selectedItem}
-            onClick={clear}
+            value={state?.selectedItem?.name || ""}
             onFocus={clear}
             style={{ width: "300px" }}
             type="text"
@@ -53,8 +58,8 @@ const TrangChu = () => {
           <datalist id="listDemo">
             {listDemo.map((v, i) => {
               return (
-                <option key={i} value={v}>
-                  {v}
+                <option id="huyi" data-test={v.id} key={i}>
+                  {v.name}
                 </option>
               );
             })}
@@ -66,4 +71,17 @@ const TrangChu = () => {
 };
 export default TrangChu;
 
-const listDemo = ["ali", "metu", "puri", "onno", "leri", "mena"];
+const listDemo = [
+  {
+    id: "ddvd",
+    name: "huyi",
+  },
+  {
+    id: "ddvd-01",
+    name: "calaa",
+  },
+  {
+    id: "ddvd-02",
+    name: "meta",
+  },
+];
