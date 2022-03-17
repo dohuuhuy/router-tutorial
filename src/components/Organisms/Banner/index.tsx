@@ -1,10 +1,11 @@
-import Container from "../../Atoms/Container";
-import styles from "./styles.module.scss";
-import { FaRegGrinTongueSquint } from "react-icons/fa";
-import Button from "../../Atoms/Button";
+import Button from 'Atoms/Button'
+import Container from 'Atoms/Container'
+import { FaRegGrinTongueSquint } from 'react-icons/fa'
+import styles from './styles.module.scss'
+
 const Banner = () => {
   return (
-    <Container tag="section" className={styles.banner}>
+    <Container tag='section' className={styles.banner}>
       <div className={styles.card}>
         <div className={styles.cardBody}>
           <h2>Chào mừng </h2>
@@ -23,6 +24,6 @@ const Banner = () => {
         </div>
       </div>
     </Container>
-  );
-};
-export default Banner;
+  )
+}
+export default Banner

@@ -1,8 +1,6 @@
-import { FaRegGrinSquintTears, FaRegHandScissors } from "react-icons/fa";
-import { GoHome } from "react-icons/go";
-import { Link } from "react-router-dom";
-import { UrlPage } from "../../../utils/contants";
-import styles from "./styles.module.scss";
+import { Link } from 'react-router-dom'
+import { menu } from './func'
+import styles from './styles.module.scss'
 
 const Header = () => {
   return (
@@ -22,7 +20,7 @@ const Header = () => {
                   <span className={styles.icon}>{v.icon}</span>
                   <Link to={v.slug}>{v.label}</Link>
                 </li>
-              );
+              )
             })}
           </ul>
         </nav>
@@ -33,31 +31,7 @@ const Header = () => {
         <button className={styles.btn}>Đăng ký</button>
       </div>
     </header>
-  );
-};
-
-export default Header;
-
-const menu: Menu[] = [
-  {
-    slug: UrlPage.Home,
-    label: "Trang chủ",
-    icon: <GoHome />,
-  },
-  {
-    slug: UrlPage.GioiThieu,
-    label: "Giới thiệu",
-    icon: <FaRegGrinSquintTears />,
-  },
-  {
-    slug: UrlPage.LienHe,
-    label: "Liên hệ",
-    icon: <FaRegHandScissors />,
-  },
-];
-
-interface Menu {
-  slug: string;
-  label: string;
-  icon: any;
+  )
 }
+
+export default Header

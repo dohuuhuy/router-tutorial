@@ -23,7 +23,25 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "./src",
+    "paths": {
+      "Atoms/*": ["./components/Atoms/*"],
+      "Molecules/*": ["./components/Molecules/*"],
+      "Organisms/*": ["./components/Organisms/*"],
+      "Pages/*": ["./components/Pages/*"],
+      "Templates/*": ["./components/Templates/*"],
+
+      "Containers/*": ["./containers/*"],
+      "Config/*": ["./config/*"],
+      "Utils/*": ["./utils/*"],
+      "Common/*": ["./common/*"],
+
+      "Store/*": ["./store/*"],
+      "ActionStore": ["./store/actionStore"],
+      "Interface": ["./store/interface"],
+      "ComponentStore/*": ["./store/componentStore/*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["./src/**/*", "**/*.ts", "**/*.tsx"]
