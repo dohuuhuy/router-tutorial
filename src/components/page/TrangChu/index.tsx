@@ -50,7 +50,7 @@ const TrangChu = () => {
             value={state?.selectedItem?.name || ""}
             onFocus={clear}
             style={{ width: "300px" }}
-            type="text"
+            type="search"
             list="listDemo"
             placeholder="chọn gì đi"
             className={styles.selectSearch}
