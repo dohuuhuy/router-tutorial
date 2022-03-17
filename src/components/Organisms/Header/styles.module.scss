@@ -1,4 +1,4 @@
-@import "/public/assets/scss/mixin";
+@import '/public/assets/scss/mixin';
 
 .header {
   margin: auto;
@@ -35,14 +35,6 @@
           border-radius: 3px;
           margin: 5px;
           transition: transform 0.1s, filter 0.1s;
-          display: flex;
-
-          .icon {
-            margin: 0 5px;
-            display: flex;
-            align-content: center;
-            align-items: center;
-          }
 
           &:hover {
             filter: brightness(99%);
@@ -51,9 +43,17 @@
             transform: scale(0.97);
           }
           a {
+            display: flex;
             text-decoration: none;
             color: black;
             line-height: 0.9;
+
+            .icon {
+              margin: 0 5px;
+              display: flex;
+              align-content: center;
+              align-items: center;
+            }
           }
         }
       }

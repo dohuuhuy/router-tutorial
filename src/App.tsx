@@ -1,6 +1,7 @@
 import HomeLayout from '@Templates/HomeLayout'
+import { UrlPage } from '@utils/contants'
+import { listRoute } from '@utils/listRouter'
 import { Route, Routes } from 'react-router-dom'
-import { UrlPage } from './utils/contants'
 import './common/styles/App.css'
 
 function App() {
@@ -8,9 +9,9 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path={UrlPage.Home} element={<HomeLayout />}>
-          {/* <Route index element={<TrangChu />} />
-          <Route path={UrlPage.GioiThieu} element={<GioiThieu />} />
-          <Route path={UrlPage.LienHe} element={<LienHe />} /> */}
+          {listRoute.map((v) => (
+            <Route key={v.id} path={v.path} element={v.element} />
+          ))}
         </Route>
       </Routes>
     </div>

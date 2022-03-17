@@ -6,8 +6,6 @@
       "@config/*": ["./config/*"],
       "@utils/*": ["./utils/*"],
 
-      // "@*": ["./components/*"],
-
       "@Atoms/*": ["./components/Atoms/*"],
       "@Molecules/*": ["./components/Molecules/*"],
       "@Organisms/*": ["./components/Organisms/*"],

@@ -17,8 +17,10 @@ const Header = () => {
             {menu.map((v, i) => {
               return (
                 <li key={i}>
-                  <span className={styles.icon}>{v.icon}</span>
-                  <Link to={v.slug}>{v.label}</Link>
+                  <Link to={v.slug}>
+                    <span className={styles.icon}>{v.icon}</span>
+                    {v.label}
+                  </Link>
                 </li>
               )
             })}
