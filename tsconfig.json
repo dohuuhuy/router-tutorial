@@ -1,5 +1,4 @@
 {
-  "exclude": ["node_modules", "./tsconfig.paths.json"],
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
@@ -26,5 +25,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
+  "exclude": ["node_modules"],
   "include": ["./src/**/*", "**/*.ts", "**/*.tsx"]
 }
