@@ -5,9 +5,16 @@
       "@containers/*": ["./containers/*"],
       "@config/*": ["./config/*"],
       "@utils/*": ["./utils/*"],
-      "@components/*": ["./components/*"],
+
+      // "@*": ["./components/*"],
+
+      "@Atoms/*": ["./components/Atoms/*"],
+      "@Molecules/*": ["./components/Molecules/*"],
+      "@Organisms/*": ["./components/Organisms/*"],
+      "@Pages/*": ["./components/Pages/*"],
+      "@Templates/*": ["./components/Templates/*"],
+
       "@common/*": ["./common/*"],
-      "@public/*": ["./public/*"],
       "@store/*": ["./store/*"],
       "@actionStore": ["./store/actionStore"],
       "@interface": ["./store/interface"],

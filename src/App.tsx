@@ -1,6 +1,6 @@
+import HomeLayout from '@Templates/HomeLayout'
 import { Route, Routes } from 'react-router-dom'
-import HomeLayout from 'Templates/HomeLayout'
-import { UrlPage } from 'utils/contants'
+import { UrlPage } from './utils/contants'
 import './common/styles/App.css'
 
 function App() {

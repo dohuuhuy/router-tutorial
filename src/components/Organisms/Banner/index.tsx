@@ -1,5 +1,5 @@
-import Button from 'Atoms/Button'
-import Container from 'Atoms/Container'
+import Button from '@Atoms/Button'
+import Container from '@Atoms/Container'
 import { FaRegGrinTongueSquint } from 'react-icons/fa'
 import styles from './styles.module.scss'
 

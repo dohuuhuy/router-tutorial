@@ -1,8 +1,8 @@
-import { Outlet } from "react-router-dom";
-import Footer from "../../Organisms/Footer";
-import Header from "../../Organisms/Header";
+import Footer from '@Organisms/Footer'
+import Header from '@Organisms/Header'
+import { Outlet } from 'react-router-dom'
 
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss'
 
 const HomeLayout = () => {
   return (
@@ -15,7 +15,7 @@ const HomeLayout = () => {
 
       <Footer />
     </section>
-  );
-};
+  )
+}
 
-export default HomeLayout;
+export default HomeLayout

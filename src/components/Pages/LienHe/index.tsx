@@ -1,4 +1,4 @@
-import Container from 'Atoms/Container'
+import Container from '@Atoms/Container'
 import { useLocation } from 'react-router-dom'
 
 const LienHe = () => {

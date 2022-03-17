@@ -1,7 +1,7 @@
+import { UrlPage } from '@utils/contants'
 import { FaRegHandScissors } from 'react-icons/fa'
 import { FaRegGrinSquintTears } from 'react-icons/fa'
 import { GoHome } from 'react-icons/go'
-import { UrlPage } from 'Utils/contants'
 
 export const menu: Menu[] = [
   {
