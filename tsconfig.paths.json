@@ -2,17 +2,16 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@actionStore": ["src/store/actionStore"],
-      "@interface": ["src/store/interface"],
-      "@containers/*": ["./src/containers/*"],
-      "@config/*": ["./src/config/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@templates/*": ["./src/components/templates/*"],
-      "@components/*": ["./src/components/*"],
-      "@componentStore/*": ["./src/store/componentStore/*"],
-      "@assets/*": ["./src/common/assets/*"],
+      "@containers/*": ["./containers/*"],
+      "@config/*": ["./config/*"],
+      "@utils/*": ["./utils/*"],
+      "@components/*": ["./components/*"],
+      "@common/*": ["./common/*"],
       "@public/*": ["./public/*"],
-      "@store/*": ["./src/store/*"]
+      "@store/*": ["./store/*"],
+      "@actionStore": ["./store/actionStore"],
+      "@interface": ["./store/interface"],
+      "@componentStore/*": ["./store/componentStore/*"]
     }
   }
 }
