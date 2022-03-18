@@ -57,7 +57,7 @@ const TrangChu = () => {
             placeholder='chọn gì đi'
             className={styles.selectSearch}
           />
-          <datalist id='listDemo'>
+          <datalist id='listDemo' style={{ backgroundColor: 'red' }}>
             {listDemo.map((v, i) => {
               return (
                 <option id='huyi' data-test={v.id} key={i}>
